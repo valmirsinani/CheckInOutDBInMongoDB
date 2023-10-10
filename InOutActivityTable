@@ -1,0 +1,5 @@
+/InOutActivity
+db.createCollection("inOutActivity", { capped : true, size : 5242880, max : 2000 } ))
+db.inOutActivity.insertMany([
+    {Id: 1, EmployeeId: 102, TeamId: 1, EventIDIn: 1, EventIDOut: 102, DataIn: "10/17/2022 9:19", DataOut: "10/17/2022 13:20"} 
+])
