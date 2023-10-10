@@ -1,0 +1,5 @@
+db.createCollection("teamEmployees", { capped : true, size : 5242880, max : 2000 } ))
+db.teamEmployees.insertMany([
+    {Id: 1, TeamId: 1, EmployeeId: 15}, 
+    {Id: 3, TeamId: 1, EmployeeId: 101}
+])
