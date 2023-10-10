@@ -1,0 +1,5 @@
+db.createCollection("events", { capped : true, size : 5242880, max : 2000 } ))
+db.events.insertMany([
+    {ID: 1, Descriptions: "Entry", DisplayOrder: 1, InUse: true},
+    {ID: 4, Descriptions: "Entry 2", DisplayOrder: 4, InUse: false, IsEntrance: true}
+])
