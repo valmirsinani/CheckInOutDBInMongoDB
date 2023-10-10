@@ -1,0 +1,5 @@
+db.createCollection("employees", { capped : true, size : 5242880, max : 2000 } ))
+db.employees.insertMany([
+    {Id: 1, Code: "HR-d00001", FirstName: "Augustus", LastName: "Schulist", Bdate: "1/9/1965", Address: "731 Fondren, Houston, TX", Sex: "M", Salary: 30000, DepartamentID: 2, CardCode: 7831823, Status: -1},
+    {Id: 2, Code: "HR-s00002", FirstName: "Elisha", LastName: "Hilpert", Bdate: "5/2/1975", Address: "975 Fire Oak, Humble, TX", Sex: "F", DepartamentID: 2, CardCode: 14481}
+])
