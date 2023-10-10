@@ -1,0 +1,5 @@
+db.createCollection("employeeStatus", { capped : true, size : 5242880, max : 2000 } ))
+db.employeeStatus.insertMany([
+    {Id: 1, Description: "Aktiv"},
+    {Id: 2, Description: "Resignation", OrderIndex:2},
+])
